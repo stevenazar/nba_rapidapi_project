@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 #configuration de la bdd avec mongo
 #configuration et connection à la bdd
-app.config["MONGO_URI"] = "mongodb://localhost:27017/projectapi"
+app.config["MONGO_URI"] = "mongodb://0.0.0.0:0/projectapi"
 mongo = PyMongo(app)
 
 #définir une route pour voir si l'api fonctionne
